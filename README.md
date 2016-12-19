@@ -1,5 +1,5 @@
 # Go Adventure App
-The Go Adventure aapp is about traveling the world one monument at a time, and it's built on rails. 
+The Go Adventure app is about traveling the world one monument at a time, and it's built on rails. 
 ---
 # User Stories
 * As a user, I can log in search for attractions to visit by city name, and decide to add a particular monument to my travel list, or search for another adventure.
