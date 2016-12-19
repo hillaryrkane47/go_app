@@ -11,5 +11,30 @@ I like puppies.
     </p>
   </div>
 </div>
+
+
+
+
+
+<h1>This is the details page</h1>
+
+<h3>turn this into a pop-up</h3>
+
+  <% @trips.each do |trip| %>
+    City: <%= @trips["city_name"] %>
+
+    <% @users.each do |monument| %>
+      Monument: <%= monument["monument_name"] %>
+      Address: <%= address["address"] %>
+    <% end %>
+
+  <% end %>
+
+
+
+
+
+
+
 <% end %>
 <% end %>
