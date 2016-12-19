@@ -15,5 +15,6 @@ The Go Adventure app is about traveling the world one monument at a time, and it
 # Special Thanks
 This project would not have been possible without the contributions of the following people and technologies:
 * [Google Places Api ](https://developers.google.com/places/documentation/)
+* [Trello ](https://trello.com/)
 * Ruby, Rails, StackOverflow, Google, the internet, Google Fonts
 ---
