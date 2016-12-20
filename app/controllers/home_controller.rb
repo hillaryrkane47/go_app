@@ -17,10 +17,10 @@ class HomeController < ApplicationController
     city = home['city']
     @url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=monuments+in+"+city+"&key=AIzaSyAaTxKO83nQMSzEMq5T-WqU9thoXryHcaM"
     @response = HTTParty.get(@url)
-    mon_name = params[:mon][:monu]
-    address = params[:mon][:address]
-    pic = params[:mon][:pic]
-    puts mon_name, address, pic
+    # mon_name = params[:mon][:monu]
+    # address = params[:mon][:address]
+    # pic = params[:mon][:pic]
+    # puts mon_name, address, pic
     render 'new'
   end
   def new
