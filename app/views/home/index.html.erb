@@ -1,6 +1,42 @@
 <% content_for :top_content do %>
 <% if user_signed_in? %>
-I like puppies.
+
+<h1>Wish List</h1>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="http://i.imgur.com/KreVNXGm.jpg?3">
+      <p>Monument Name</p>
+      <p>City Name</p>
+    </div>
+    <div class="col-md-4">
+      <img src="http://i.imgur.com/KreVNXGm.jpg?3">
+      <p>Monument Name</p>
+      <p>City Name</p>
+    </div>
+    <div class="col-md-4">
+      <img src="http://i.imgur.com/KreVNXGm.jpg?3">
+      <p>Monument Name</p>
+      <p>City Name</p>
+    </div>
+  </div>
+</div>
+
+<h1>Visited</h1>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="http://i.imgur.com/KreVNXGm.jpg?3">
+      <p>Monument Name</p>
+      <p>City Name</p>
+    </div>
+  </div>
+</div>
+
+
+
 <% else %>
 <div class="jumbotron">
   <div class="container">
