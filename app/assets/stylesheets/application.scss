@@ -13,6 +13,64 @@
  *= require_tree .
  *= require_self
  */
+
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import 'bootstrap/theme';
+@import url(https://fonts.googleapis.com/css?family=Quicksand);
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+.register {
+  text-align: center;
+}
+
+.signup, .edit, .login{
+  text-align: center;
+  border: 1px solid black;
+  line-height: 30px;
+  letter-spacing: 2px;
+  padding: 1px;
+  background-color: azure;
+  width: 500px;
+  margin: 0 auto;
+  transition:  all 0.3s ease-in-out;
+}
+.edit {
+  width: 700px;
+}
+
+.signup-btn {
+  padding-top: 10px;
+}
+
+.grid {
+  transition:  all 0.3s ease-in-out;
+  text-align: center;
+}
+
+.grid:hover {
+  font-weight: 900;
+  border-left: 1px dotted black;
+}
+
+#welcome {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  background: url('http://i.imgur.com/NGqX1YVl.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+.welcome-cont{
+  margin-top: 30px;
+}
