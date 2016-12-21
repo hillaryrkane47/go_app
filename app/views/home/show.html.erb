@@ -12,5 +12,5 @@ Comment: <%= @monument['comment'] %> <br><br>
   <%= f.text_field :pic, :value => @monument['image'] %><br>
   <%= label(:monument, 'Comment') %>
   <%= f.text_field :comment, :value => @monument['comment'] %><br>
-  <%= f.submit "Edit", class: 'btn btn-primary btn-sm'%><br><br>
+  <%= f.submit "Edit", class: 'edit-btn btn btn-default btn-sm'%><br><br>
 <% end %>
