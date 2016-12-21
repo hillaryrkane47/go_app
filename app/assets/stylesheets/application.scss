@@ -54,6 +54,16 @@ input:focus {
 .grid {
   transition:  all 0.3s ease-in-out;
   text-align: center;
+  overflow: hidden;
+  /* border:  1px solid black; */
+  /* vertical-align: top; */
+}
+
+.grid img {
+  width: 300px;
+  box-sizing: border-box;
+  margin: 0 auto;
+
 }
 
 .grid:hover {
@@ -61,7 +71,9 @@ input:focus {
   border-left: 1px dotted black;
 }
 
+
 #welcome {
+  z-index: -1;
   height: 100%;
   width: 100%;
   position: absolute;
