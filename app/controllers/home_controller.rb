@@ -1,10 +1,10 @@
 class HomeController < ApplicationController
-  # This is where you could load a users trips/monuments when they log in
-  # if user_signed_in?
-    # get their id with the current_user method
-    # Then do @monuments/@trips = Trips.where (user.id = id etc etc)
+
     def index
-      @monuments = Monument.all
+      if user_signed_in?
+        @monuments = Monument.where(user_id: current_user.id)
+      else
+      end
     end
 
     def show
@@ -15,7 +15,9 @@ class HomeController < ApplicationController
       home = params['home']
       @city = home['city']
       if @city != nil
-        @url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=monuments+in+"+@city+"&key=AIzaSyBSwXn_BJe18ejLsao-5RYPgkhVGKXuZAQ"
+        @key = ENV["google_places_1"]
+        @otherkey = ENV["google_places_2"]
+        @url = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=monuments+in+"+@city+"&key="+@otherkey
         @response = HTTParty.get(@url)
         @store_city = @city
       else
@@ -49,7 +51,13 @@ class HomeController < ApplicationController
     end
 
     def update
-
+      mon = params['monument']
+      monu = Monument.find_by(monument_name: mon['name'])
+      monu.update(monument_name: mon['name'],
+                      address: mon['address'],
+                      image: mon['pic'],
+                      comment: mon['comment'])
+      redirect_to(:back)
     end
 
     def destroy

@@ -12,26 +12,16 @@
   <% @monuments.each do |mon| %>
     <div class="col-md-4 grid">
       <img src= <%= mon['image'] %> >
-      <p><%= mon['monument_name'] %> | <%= mon['address'] %></p>
-      <a href = "home/<%= mon['id'] %>" class='btn btn-default btn-xs' >View/Edit</a>
-      <a href = "home/<%= mon['id'] %>" data-method='delete' class='btn btn-default btn-xs'>Delete Trip</a><br>
+      <div class="content">
+        <p><%= mon['monument_name'] %> | <%= mon['address'] %></p>
+        <a href = "home/<%= mon['id'] %>" class='btn btn-default btn-xs' >View/Edit</a>
+        <a href = "home/<%= mon['id'] %>" data-method='delete' class='btn btn-default btn-xs'>Delete Trip</a><br><br>
+        </div>
     </div>
     <% end %>
   </div>
 </div>
 
-<!-- not saving anything in visited yet until we add column to monuments table w/ boolean value - added below img for formatting purposes in the meantime -->
-<h1>Visited</h1>
-<br>
-<div class="container grid">
-  <div class="row">
-    <div class="col-md-4">
-      <img src="http://i.imgur.com/KreVNXGm.jpg?3">
-      <p>Monument Name</p>
-      <p>City</p>
-    </div>
-  </div>
-</div>
 
 <% else %>
 

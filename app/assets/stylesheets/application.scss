@@ -54,16 +54,19 @@ input:focus {
 .grid {
   transition:  all 0.3s ease-in-out;
   text-align: center;
-  overflow: hidden;
+  /* overflow: hidden; */
+  display: inline-block;
+  /* vertical-align: middle; */
+  float: none;
   /* border:  1px solid black; */
-  /* vertical-align: top; */
+  vertical-align: top;
 }
 
-.grid img {
-  width: 300px;
-  box-sizing: border-box;
-  margin: 0 auto;
 
+.grid img {
+  width: 250px;
+  /* box-sizing: border-box; */
+  /* margin: 0 auto; */
 }
 
 .grid:hover {
@@ -71,6 +74,12 @@ input:focus {
   border-left: 1px dotted black;
 }
 
+/* .content {
+  width: 250px;
+  text-align: inherit;
+  margin: 0;
+  font-size: 13px;
+} */
 
 #welcome {
   z-index: -1;
