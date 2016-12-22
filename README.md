@@ -16,11 +16,14 @@ The Go Adventure app is about traveling the world one monument at a time, and it
 # Media
 ### Wireframe & ERD
 ![WireFrame](http://i.imgur.com/pEiPFibh.png)
-![ERD](http://i.imgur.com/X5e9CwSm.png)
+![ERD](http://i.imgur.com/X5e9CwSh.png)
 
 # Special Thanks
 This project would not have been possible without the contributions of the following people and technologies:
 * [Google Places Api ](https://developers.google.com/places/documentation/)
 * [Trello ](https://trello.com/)
-* Ruby, Rails, StackOverflow, Google, the internet, Google Fonts, Paul Decotiis for his awesome picture of NYC on the welcome page.
+* [Bootstrap](http://getbootstrap.com/css/)
+* [Devise Gem](https://github.com/plataformatec/devise)
+* [Codepen](http://codepen.io/kanishkkunal/pen/MYbmzN)
+* Ruby, Rails, StackOverflow, Google, the internet, Google Fonts, Paul Decotiis for his awesome picture of NYC on the welcome page, & Dom - our fearless leader and API wizard.
 ---
