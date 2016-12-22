@@ -14,7 +14,6 @@
         </div>
         <div id="navbar">
           <ul class="nav navbar-nav">
-            <li><%= link_to 'Home', root_path %></li>
             <% if user_signed_in? %>
             <%= current_user["email"] %>
             <% end %>

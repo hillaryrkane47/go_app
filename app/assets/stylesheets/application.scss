@@ -19,6 +19,7 @@
 @import "bootstrap";
 @import 'bootstrap/theme';
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 
 body {
   font-family: "Quicksand", sans-serif;
@@ -89,7 +90,10 @@ input:focus {
 .wrapper {
   background-color: #f7f7f7;
 }
-
+.adventure-btn:hover {
+  color: orange;
+  font-weight: 800;
+}
 .edit-btn:hover {
   color: blue;
 }
@@ -99,12 +103,12 @@ input:focus {
 }
 
 #welcome {
-  z-index: -1;
+  /* z-index: -1; */
   height: 100%;
   width: 100%;
   position: absolute;
   top: 0px;
-  background: url('http://i.imgur.com/NGqX1YVl.jpg') no-repeat center center fixed;
+  background: url('http://decotiis.design/build/img/photo/img-1.jpg') no-repeat center center fixed;
   background-size: cover;
   text-align: center;
   color: white;
@@ -117,9 +121,21 @@ input:focus {
   margin-top: 30px;
   background-color: white;
   display: flex;
-  color: black;
+  color: white;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   flex-direction: column;
   padding: 20px;
   box-shadow: 3px 0 45px rgba(0,0,0,0.3);
-  background-color: rgba(255,255,255,0.72);
+  background-color: rgba(0,0,0,0.8);
+  width: 337px;
 }
+.welcome-btn:hover {
+  color: fuchsia;
+}
+
+.welcome-header {
+  font-weight: 200;
+}
+
