@@ -1,5 +1,6 @@
 # Go Adventure App
 The Go Adventure app is about traveling the world one monument at a time, and it's built on rails. 
+
 ---
 # How This Works
 * When you arrive on the Go Adventure website you will be prompted to create a user log-in. This log-in will allow you to save the monuments that you've searched, and add comments to each individual one.
@@ -14,8 +15,8 @@ The Go Adventure app is about traveling the world one monument at a time, and it
 
 # Media
 ### Wireframe & ERD
-![ScreenShot](assets/images/wireframe_travel_app.png)
-![ScreenShot](images/travel_app_erd.png)
+![WireFrame](http://i.imgur.com/pEiPFibl.png)
+![ERD](http://i.imgur.com/X5e9CwSm.png)
 
 # Special Thanks
 This project would not have been possible without the contributions of the following people and technologies:
