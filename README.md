@@ -15,7 +15,7 @@ The Go Adventure app is about traveling the world one monument at a time, and it
 
 # Media
 ### Wireframe & ERD
-![WireFrame](http://i.imgur.com/pEiPFibl.png)
+![WireFrame](http://i.imgur.com/pEiPFibh.png)
 ![ERD](http://i.imgur.com/X5e9CwSm.png)
 
 # Special Thanks
