@@ -21,6 +21,7 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400);
 
+/* base styles */
 body {
   font-family: "Quicksand", sans-serif;
 }
@@ -33,7 +34,7 @@ input:focus {
   text-align: center;
 }
 
-.signup, .edit, .login{
+.signup, .edit, .login {
   text-align: center;
   border: 1px solid black;
   line-height: 30px;
@@ -44,14 +45,34 @@ input:focus {
   margin: 0 auto;
   transition:  all 0.3s ease-in-out;
 }
+
 .edit {
   width: 700px;
 }
 
+/* buttons */
 .signup-btn {
   padding-top: 10px;
 }
 
+.adventure-btn:hover {
+  color: orange;
+  font-weight: 800;
+}
+
+.edit-btn:hover {
+  color: blue;
+}
+
+.delete-btn:hover {
+  color: red;
+}
+
+.welcome-btn:hover {
+  color: fuchsia;
+}
+
+/* index.html.erb */
 .row-results {
   margin-left: 93px;
 }
@@ -67,11 +88,6 @@ input:focus {
   padding: 30px;
 }
 
-.api-results {
-  padding: 10px;
-  display: inline-block;
-}
-
 .grid img {
   width: 250px;
   height: 167px;
@@ -82,26 +98,22 @@ input:focus {
   border-color: fuchsia;
 }
 
+.api-results {
+  padding: 10px;
+  display: inline-block;
+}
+
 .content {
   width: 250px;
   margin: 0 auto;
   font-size: 13px;
 }
+
 .wrapper {
   background-color: #f7f7f7;
 }
-.adventure-btn:hover {
-  color: orange;
-  font-weight: 800;
-}
-.edit-btn:hover {
-  color: blue;
-}
 
-.delete-btn:hover {
-  color: red;
-}
-
+/* welcome page */
 #welcome {
   /* z-index: -1; */
   height: 100%;
@@ -130,9 +142,6 @@ input:focus {
   box-shadow: 3px 0 45px rgba(0,0,0,0.3);
   background-color: rgba(0,0,0,0.8);
   width: 337px;
-}
-.welcome-btn:hover {
-  color: fuchsia;
 }
 
 .welcome-header {
